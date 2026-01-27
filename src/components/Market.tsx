@@ -16,14 +16,14 @@ export default function Market() {
       <div className="container-site px-4 sm:px-6">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <p className="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2 sm:mb-3">
+          <p className="text-ginger-dark font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2 sm:mb-3">
             Onde encontrar
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">
             Mercado de atuação
           </h2>
           <div className="divider-gold mb-4 sm:mb-6" />
-          <p className="text-muted-foreground text-base sm:text-lg px-2">
+          <p className="text-foreground/80 text-base sm:text-lg px-2">
             A Ginzi está presente nos melhores estabelecimentos, levando o padrão ouro em gengibre cristalizado para todo o Brasil.
           </p>
         </div>
@@ -35,14 +35,14 @@ export default function Market() {
               key={market.name}
               className="group bg-background rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-soft hover:shadow-card transition-all duration-300 flex items-start gap-3 sm:gap-4"
             >
-              <div className="w-10 sm:w-12 h-10 sm:h-12 bg-primary/10 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                <market.icon size={20} className="text-primary group-hover:text-primary-foreground sm:w-6 sm:h-6" />
+              <div className="w-10 sm:w-12 h-10 sm:h-12 bg-ginger-dark/10 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-ginger-dark transition-all duration-300">
+                <market.icon size={20} className="text-ginger-dark group-hover:text-white sm:w-6 sm:h-6" />
               </div>
               <div>
                 <h3 className="text-base sm:text-lg font-semibold mb-0.5 sm:mb-1">
                   {market.name}
                 </h3>
-                <p className="text-muted-foreground text-xs sm:text-sm">
+                <p className="text-foreground/70 text-xs sm:text-sm">
                   {market.description}
                 </p>
               </div>

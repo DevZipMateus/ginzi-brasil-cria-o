@@ -51,14 +51,14 @@ export default function Differentials() {
       <div className="container-site px-4 sm:px-6">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <p className="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2 sm:mb-3">
+          <p className="text-ginger-dark font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2 sm:mb-3">
             Por que escolher Ginzi
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">
             7 diferenciais de ouro
           </h2>
           <div className="divider-gold mb-4 sm:mb-6" />
-          <p className="text-muted-foreground text-base sm:text-lg px-2">
+          <p className="text-foreground/80 text-base sm:text-lg px-2">
             Cada cubinho entrega uma experiência completa que cabe na palma da sua mão.
           </p>
         </div>
@@ -80,7 +80,7 @@ export default function Differentials() {
               <h3 className="text-base sm:text-xl font-display font-semibold mb-0.5 sm:mb-1">
                 {diff.title}
               </h3>
-              <p className="text-muted-foreground text-xs sm:text-sm">
+              <p className="text-foreground/70 text-xs sm:text-sm">
                 {diff.subtitle}
               </p>
 

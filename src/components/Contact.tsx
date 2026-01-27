@@ -34,24 +34,24 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12">
           {/* Contact info */}
           <div>
-            <p className="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2 sm:mb-3">
+            <p className="text-ginger-dark font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2 sm:mb-3">
               Fale conosco
             </p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">
               Entre em contato
             </h2>
-            <p className="text-muted-foreground text-base sm:text-lg mb-6 sm:mb-8">
+            <p className="text-foreground/80 text-base sm:text-lg mb-6 sm:mb-8">
               Estamos prontos para atender você. Entre em contato por qualquer um dos canais abaixo ou envie uma mensagem diretamente.
             </p>
 
             <div className="space-y-4 sm:space-y-6">
               {contactInfo.map((info) => (
                 <div key={info.label} className="flex items-start gap-3 sm:gap-4">
-                  <div className="w-10 sm:w-12 h-10 sm:h-12 bg-primary/10 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
-                    <info.icon size={18} className="text-primary sm:w-[22px] sm:h-[22px]" />
+                  <div className="w-10 sm:w-12 h-10 sm:h-12 bg-foreground/10 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
+                    <info.icon size={18} className="text-ginger-dark sm:w-[22px] sm:h-[22px]" />
                   </div>
                   <div>
-                    <p className="text-xs sm:text-sm text-muted-foreground">{info.label}</p>
+                    <p className="text-xs sm:text-sm text-foreground/70">{info.label}</p>
                     {info.href ? (
                       <a
                         href={info.href}
@@ -68,8 +68,8 @@ export default function Contact() {
             </div>
 
             {/* Social */}
-            <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-border">
-              <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">Siga-nos nas redes sociais</p>
+            <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-foreground/20">
+              <p className="text-xs sm:text-sm text-foreground/70 mb-3 sm:mb-4">Siga-nos nas redes sociais</p>
               <a
                 href="https://instagram.com/ginzibrasil"
                 target="_blank"

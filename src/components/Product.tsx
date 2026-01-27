@@ -34,13 +34,13 @@ export default function Product() {
           {/* Content */}
           <div className="order-1 lg:order-2 space-y-6 sm:space-y-8">
             <div>
-              <p className="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2 sm:mb-3">
+              <p className="text-ginger-dark font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2 sm:mb-3">
                 Nosso produto
               </p>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">
                 Gengibre cristalizado pote 100g
               </h2>
-              <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
+              <p className="text-foreground/80 text-base sm:text-lg leading-relaxed">
                 Nós acreditamos que cuidar de si não precisa ser uma tarefa séria ou sem graça. Pode — e deve — ser um momento de puro deleite. Por isso, a GINZI não é apenas um snack; é uma experiência completa que cabe na palma da sua mão.
               </p>
             </div>
@@ -49,8 +49,8 @@ export default function Product() {
             <ul className="space-y-3 sm:space-y-4">
               {benefits.map((benefit) => (
                 <li key={benefit} className="flex items-center gap-2 sm:gap-3">
-                  <div className="w-5 sm:w-6 h-5 sm:h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Check size={12} className="text-primary sm:w-3.5 sm:h-3.5" />
+                  <div className="w-5 sm:w-6 h-5 sm:h-6 rounded-full bg-ginger-dark/10 flex items-center justify-center flex-shrink-0">
+                    <Check size={12} className="text-ginger-dark sm:w-3.5 sm:h-3.5" />
                   </div>
                   <span className="text-foreground text-sm sm:text-base">{benefit}</span>
                 </li>

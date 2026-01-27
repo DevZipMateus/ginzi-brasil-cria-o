@@ -30,14 +30,14 @@ export default function About() {
       <div className="container-site px-4 sm:px-6">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <p className="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2 sm:mb-3">
+          <p className="text-ginger-dark font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2 sm:mb-3">
             Nossa história
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">
             De Jinzi para Ginzi
           </h2>
           <div className="divider-gold mb-4 sm:mb-6" />
-          <p className="text-muted-foreground text-base sm:text-lg px-2">
+          <p className="text-foreground/80 text-base sm:text-lg px-2">
             Uma ponte entre culturas que transforma a riqueza natural do gengibre em uma experiência sensorial de luxo.
           </p>
         </div>
@@ -92,13 +92,13 @@ export default function About() {
               className="card-premium text-center group p-6 sm:p-8"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-12 sm:w-14 h-12 sm:h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                <value.icon size={24} className="text-primary group-hover:text-primary-foreground sm:w-7 sm:h-7" />
+              <div className="w-12 sm:w-14 h-12 sm:h-14 bg-ginger-dark/10 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:bg-ginger-dark transition-all duration-300">
+                <value.icon size={24} className="text-ginger-dark group-hover:text-white sm:w-7 sm:h-7" />
               </div>
               <h3 className="text-lg sm:text-xl font-display font-semibold mb-2 sm:mb-3">
                 {value.title}
               </h3>
-              <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
+              <p className="text-foreground/70 text-xs sm:text-sm leading-relaxed">
                 {value.description}
               </p>
             </div>
