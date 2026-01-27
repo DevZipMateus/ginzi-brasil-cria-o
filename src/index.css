@@ -58,6 +58,9 @@
     --ginger-dark: 20 50% 35%;
     --title: 150 52% 21%;
     
+    /* Cor de destaque para labels em fundos amarelos */
+    --label-dark: 20 50% 35%;
+    
     /* Backgrounds das seções */
     --section-gold: 43 100% 63%;
     --section-gold-light: 52 100% 75%;
