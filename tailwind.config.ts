@@ -71,6 +71,10 @@ export default {
           DEFAULT: "hsl(var(--ginger))",
           dark: "hsl(var(--ginger-dark))",
         },
+        "section-gold": {
+          DEFAULT: "hsl(var(--section-gold))",
+          light: "hsl(var(--section-gold-light))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -11,7 +11,7 @@ const benefits = [
 
 export default function Product() {
   return (
-    <section id="produto" className="py-24 bg-background">
+    <section id="produto" className="py-24 bg-section-gold-light">
       <div className="container-site">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Product visual */}

@@ -29,7 +29,7 @@ const contactInfo = [
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-24 bg-background">
+    <section id="contato" className="py-24 bg-section-gold-light">
       <div className="container-site">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact info */}
