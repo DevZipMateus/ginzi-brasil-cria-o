@@ -27,12 +27,12 @@ export default function Hero() {
           </div>
 
           {/* H1 - Nome da empresa */}
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold text-foreground mb-6 animate-slide-up">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold mb-6 animate-slide-up">
             Ginzi
           </h1>
 
           {/* H2 - Descrição */}
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-light text-foreground/90 mb-4 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-light mb-4 animate-slide-up" style={{ animationDelay: '0.1s' }}>
             O gengibre como você nunca viu!
           </h2>
 

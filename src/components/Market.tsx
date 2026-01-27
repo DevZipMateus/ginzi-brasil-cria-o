@@ -18,7 +18,7 @@ export default function Market() {
           <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
             Onde encontrar
           </p>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
             Mercado de atuação
           </h2>
           <div className="divider-gold mb-6" />
@@ -38,7 +38,7 @@ export default function Market() {
                 <market.icon size={24} className="text-primary group-hover:text-primary-foreground" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-foreground mb-1">
+                <h3 className="text-lg font-semibold mb-1">
                   {market.name}
                 </h3>
                 <p className="text-muted-foreground text-sm">
@@ -51,7 +51,7 @@ export default function Market() {
 
         {/* B2B CTA */}
         <div className="mt-16 bg-gradient-to-br from-primary to-accent rounded-3xl p-8 md:p-12 text-center">
-          <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
+          <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">
             Quer revender Ginzi no seu estabelecimento?
           </h3>
           <p className="text-foreground/80 text-lg mb-8 max-w-2xl mx-auto">

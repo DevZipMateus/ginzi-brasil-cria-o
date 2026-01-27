@@ -44,7 +44,7 @@ export default function Product() {
               <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
                 Nosso produto
               </p>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
                 Gengibre cristalizado pote 100g
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">

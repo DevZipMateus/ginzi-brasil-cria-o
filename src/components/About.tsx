@@ -32,7 +32,7 @@ export default function About() {
           <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
             Nossa história
           </p>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
             De Jinzi para Ginzi
           </h2>
           <div className="divider-gold mb-6" />
@@ -74,7 +74,7 @@ export default function About() {
         {/* Mission */}
         <div className="bg-card rounded-3xl p-8 md:p-12 mb-16 shadow-card">
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
+            <h3 className="text-2xl md:text-3xl font-display font-bold mb-6">
               Nossa missão
             </h3>
             <p className="text-lg md:text-xl text-foreground/90 leading-relaxed">
@@ -94,7 +94,7 @@ export default function About() {
               <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                 <value.icon size={28} className="text-primary group-hover:text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-display font-semibold text-foreground mb-3">
+              <h3 className="text-xl font-display font-semibold mb-3">
                 {value.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">

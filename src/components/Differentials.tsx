@@ -54,7 +54,7 @@ export default function Differentials() {
           <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
             Por que escolher Ginzi
           </p>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
             7 diferenciais de ouro
           </h2>
           <div className="divider-gold mb-6" />
@@ -77,7 +77,7 @@ export default function Differentials() {
                 <diff.icon size={28} className="text-white" />
               </div>
 
-              <h3 className="text-xl font-display font-semibold text-foreground mb-1">
+              <h3 className="text-xl font-display font-semibold mb-1">
                 {diff.title}
               </h3>
               <p className="text-muted-foreground text-sm">
