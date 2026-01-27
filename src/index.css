@@ -56,6 +56,11 @@
     --warm-white: 45 20% 98%;
     --ginger: 25 60% 50%;
     --ginger-dark: 20 50% 35%;
+    --title: 150 52% 21%;
+    --cream: 45 30% 96%;
+    --warm-white: 45 20% 98%;
+    --ginger: 25 60% 50%;
+    --ginger-dark: 20 50% 35%;
 
     /* Gradientes */
     --gradient-gold: linear-gradient(135deg, hsl(48 95% 53%) 0%, hsl(40 80% 45%) 100%);
@@ -130,6 +135,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
+    color: #185430;
   }
 }
 
