@@ -12,37 +12,37 @@ const markets = [
 
 export default function Market() {
   return (
-    <section id="mercado" className="py-24 bg-section-gold">
-      <div className="container-site">
+    <section id="mercado" className="py-16 sm:py-20 md:py-24 bg-section-gold">
+      <div className="container-site px-4 sm:px-6">
         {/* Section header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <p className="text-primary font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2 sm:mb-3">
             Onde encontrar
           </p>
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">
             Mercado de atuação
           </h2>
-          <div className="divider-gold mb-6" />
-          <p className="text-muted-foreground text-lg">
+          <div className="divider-gold mb-4 sm:mb-6" />
+          <p className="text-muted-foreground text-base sm:text-lg px-2">
             A Ginzi está presente nos melhores estabelecimentos, levando o padrão ouro em gengibre cristalizado para todo o Brasil.
           </p>
         </div>
 
         {/* Markets grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {markets.map((market) => (
             <div
               key={market.name}
-              className="group bg-background rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300 flex items-start gap-4"
+              className="group bg-background rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-soft hover:shadow-card transition-all duration-300 flex items-start gap-3 sm:gap-4"
             >
-              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                <market.icon size={24} className="text-primary group-hover:text-primary-foreground" />
+              <div className="w-10 sm:w-12 h-10 sm:h-12 bg-primary/10 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                <market.icon size={20} className="text-primary group-hover:text-primary-foreground sm:w-6 sm:h-6" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-1">
+                <h3 className="text-base sm:text-lg font-semibold mb-0.5 sm:mb-1">
                   {market.name}
                 </h3>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground text-xs sm:text-sm">
                   {market.description}
                 </p>
               </div>
@@ -51,25 +51,25 @@ export default function Market() {
         </div>
 
         {/* Product showcase image */}
-        <div className="mt-16 rounded-3xl overflow-hidden shadow-card">
+        <div className="mt-12 sm:mt-16 rounded-2xl sm:rounded-3xl overflow-hidden shadow-card">
           <img 
             src={productPatternImage} 
             alt="Vários potes de gengibre cristalizado Ginzi em padrão diagonal" 
-            className="w-full h-64 md:h-80 object-cover"
+            className="w-full h-48 sm:h-64 md:h-80 object-cover"
           />
         </div>
 
         {/* B2B CTA */}
-        <div className="mt-12 bg-gradient-to-br from-primary to-accent rounded-3xl p-8 md:p-12 text-center">
-          <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">
+        <div className="mt-8 sm:mt-12 bg-gradient-to-br from-primary to-accent rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 text-center">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-display font-bold mb-3 sm:mb-4">
             Quer revender Ginzi no seu estabelecimento?
           </h3>
-          <p className="text-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-foreground/80 text-base sm:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto">
             Entre em contato conosco e saiba como levar o gengibre cristalizado premium para os seus clientes.
           </p>
           <a
             href="https://wa.me/5527999044433?text=Olá! Tenho interesse em revender os produtos Ginzi."
-            className="inline-flex items-center gap-2 px-8 py-4 bg-foreground text-background font-semibold rounded-full hover:bg-foreground/90 transition-all duration-300"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-foreground text-background font-semibold rounded-full hover:bg-foreground/90 transition-all duration-300 text-sm sm:text-base"
           >
             Quero ser parceiro
           </a>
