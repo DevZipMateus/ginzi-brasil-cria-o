@@ -26,10 +26,15 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* H1 - Nome da empresa */}
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold mb-6 animate-slide-up">
-            Ginzi
-          </h1>
+          {/* H1 - Nome da empresa (sr-only para SEO) */}
+          <h1 className="sr-only">Ginzi - Gengibre Cristalizado Premium</h1>
+          
+          {/* Logo visual */}
+          <img 
+            src="/ginzi-logo.png" 
+            alt="Ginzi" 
+            className="h-24 md:h-32 lg:h-40 mx-auto mb-6 animate-slide-up"
+          />
 
           {/* H2 - Descrição */}
           <h2 className="text-xl md:text-2xl lg:text-3xl font-light mb-4 animate-slide-up" style={{ animationDelay: '0.1s' }}>
