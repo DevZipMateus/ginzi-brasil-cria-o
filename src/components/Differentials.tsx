@@ -1,4 +1,7 @@
 import { Sparkles, Cloud, Eye, Leaf, Briefcase, ShieldCheck, ChefHat } from 'lucide-react';
+import { motion } from 'framer-motion';
+import FadeInView from './animations/FadeInView';
+import StaggerContainer, { StaggerItem, staggerItemVariants } from './animations/StaggerContainer';
 
 const differentials = [
   {
@@ -50,7 +53,7 @@ export default function Differentials() {
     <section id="diferenciais" className="py-16 sm:py-20 md:py-24 bg-section-gold">
       <div className="container-site px-4 sm:px-6">
         {/* Section header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <FadeInView className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <p className="text-ginger-dark font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2 sm:mb-3">
             Por que escolher Ginzi
           </p>
@@ -61,48 +64,66 @@ export default function Differentials() {
           <p className="text-foreground/80 text-base sm:text-lg px-2">
             Cada cubinho entrega uma experiência completa que cabe na palma da sua mão.
           </p>
-        </div>
+        </FadeInView>
 
         {/* Differentials grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+        <StaggerContainer 
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6"
+          staggerDelay={0.08}
+        >
           {differentials.map((diff, index) => (
-            <div
+            <StaggerItem
               key={diff.title}
-              className={`group relative bg-background rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-soft hover:shadow-gold transition-all duration-300 hover:-translate-y-1 ${
-                index === 6 ? 'col-span-2 sm:col-span-1 sm:col-start-2 lg:col-start-auto' : ''
-              }`}
+              variants={staggerItemVariants}
+              className={index === 6 ? 'col-span-2 sm:col-span-1 sm:col-start-2 lg:col-start-auto' : ''}
             >
-              {/* Icon with gradient background */}
-              <div className={`w-10 sm:w-14 h-10 sm:h-14 rounded-lg sm:rounded-xl bg-gradient-to-br ${diff.color} flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                <diff.icon size={20} className="text-white sm:w-7 sm:h-7" />
-              </div>
+              <motion.div
+                className="group relative bg-background rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-soft h-full"
+                whileHover={{ 
+                  y: -8, 
+                  scale: 1.02,
+                  boxShadow: '0 10px 40px -10px hsl(48 95% 53% / 0.4)'
+                }}
+                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+              >
+                {/* Icon with gradient background */}
+                <motion.div 
+                  className={`w-10 sm:w-14 h-10 sm:h-14 rounded-lg sm:rounded-xl bg-gradient-to-br ${diff.color} flex items-center justify-center mb-3 sm:mb-4`}
+                  whileHover={{ scale: 1.15, rotate: 5 }}
+                  transition={{ type: 'spring', stiffness: 400 }}
+                >
+                  <diff.icon size={20} className="text-white sm:w-7 sm:h-7" />
+                </motion.div>
 
-              <h3 className="text-base sm:text-xl font-display font-semibold mb-0.5 sm:mb-1">
-                {diff.title}
-              </h3>
-              <p className="text-foreground/70 text-xs sm:text-sm">
-                {diff.subtitle}
-              </p>
+                <h3 className="text-base sm:text-xl font-display font-semibold mb-0.5 sm:mb-1">
+                  {diff.title}
+                </h3>
+                <p className="text-foreground/70 text-xs sm:text-sm">
+                  {diff.subtitle}
+                </p>
 
-              {/* Hover decoration */}
-              <div className="absolute inset-0 rounded-xl sm:rounded-2xl border-2 border-transparent group-hover:border-primary/20 transition-colors duration-300" />
-            </div>
+                {/* Hover decoration */}
+                <div className="absolute inset-0 rounded-xl sm:rounded-2xl border-2 border-transparent group-hover:border-primary/30 transition-colors duration-300" />
+              </motion.div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-12 sm:mt-16">
+        <FadeInView delay={0.4} className="text-center mt-12 sm:mt-16">
           <p className="text-base sm:text-lg text-foreground mb-4 sm:mb-6">
             Experimente o padrão ouro em gengibre cristalizado
           </p>
-          <a
+          <motion.a
             href="https://wa.me/5527999044433"
-            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-primary text-primary-foreground font-semibold rounded-full hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:scale-105 text-sm sm:text-base"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-primary text-primary-foreground font-semibold rounded-full hover:bg-accent hover:text-accent-foreground transition-colors duration-300 text-sm sm:text-base"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
           >
             <Sparkles size={18} className="sm:w-5 sm:h-5" />
             Quero experimentar
-          </a>
-        </div>
+          </motion.a>
+        </FadeInView>
       </div>
     </section>
   );
