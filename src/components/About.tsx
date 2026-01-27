@@ -1,4 +1,5 @@
 import { Sparkles, Heart, Globe2, Leaf } from 'lucide-react';
+import productTopImage from '@/assets/ginzi-product-top.jpg';
 
 const values = [
   {
@@ -58,12 +59,12 @@ export default function About() {
           </div>
 
           <div className="relative">
-            <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-              <div className="text-center p-8">
-                <p className="text-8xl md:text-9xl font-display font-bold text-gradient-gold">金</p>
-                <p className="text-xl font-medium text-foreground mt-4">Jinzi = Ouro</p>
-                <p className="text-muted-foreground">Tradição milenar de Fujian, China</p>
-              </div>
+            <div className="aspect-square rounded-3xl overflow-hidden shadow-card">
+              <img 
+                src={productTopImage} 
+                alt="Pote de gengibre cristalizado Ginzi com raízes de gengibre" 
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/30 rounded-full blur-2xl" />

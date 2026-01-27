@@ -1,4 +1,5 @@
 import { Store, ShoppingBag, Coffee, Building2, UtensilsCrossed, Warehouse } from 'lucide-react';
+import productPatternImage from '@/assets/ginzi-product-pattern.jpg';
 
 const markets = [
   { icon: Store, name: 'Farmácias', description: 'Produtos de saúde e bem-estar' },
@@ -49,8 +50,17 @@ export default function Market() {
           ))}
         </div>
 
+        {/* Product showcase image */}
+        <div className="mt-16 rounded-3xl overflow-hidden shadow-card">
+          <img 
+            src={productPatternImage} 
+            alt="Vários potes de gengibre cristalizado Ginzi em padrão diagonal" 
+            className="w-full h-64 md:h-80 object-cover"
+          />
+        </div>
+
         {/* B2B CTA */}
-        <div className="mt-16 bg-gradient-to-br from-primary to-accent rounded-3xl p-8 md:p-12 text-center">
+        <div className="mt-12 bg-gradient-to-br from-primary to-accent rounded-3xl p-8 md:p-12 text-center">
           <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">
             Quer revender Ginzi no seu estabelecimento?
           </h3>

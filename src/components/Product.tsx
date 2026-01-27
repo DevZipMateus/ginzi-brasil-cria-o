@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import productKitchenImage from '@/assets/ginzi-product-kitchen.jpg';
 
 const benefits = [
   'Gengibre cristalizado artesanal',
@@ -16,20 +17,12 @@ export default function Product() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Product visual */}
           <div className="relative order-2 lg:order-1">
-            <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-primary via-primary/80 to-accent flex items-center justify-center relative">
-              {/* Decorative elements */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-3/4 h-3/4 border-2 border-white/20 rounded-full" />
-                <div className="absolute w-1/2 h-1/2 border-2 border-white/10 rounded-full" />
-              </div>
-              
-              <div className="relative text-center p-8 z-10">
-                <div className="w-32 h-32 mx-auto bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center mb-6">
-                  <span className="text-6xl font-display font-bold text-foreground">G</span>
-                </div>
-                <p className="text-foreground text-2xl font-display font-bold">Pote 100g</p>
-                <p className="text-foreground/80 mt-2">Gengibre cristalizado premium</p>
-              </div>
+            <div className="aspect-square rounded-3xl overflow-hidden shadow-card">
+              <img 
+                src={productKitchenImage} 
+                alt="Pote de gengibre cristalizado Ginzi em tábua de madeira com raízes de gengibre frescas" 
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Floating badge */}
