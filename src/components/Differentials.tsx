@@ -47,7 +47,7 @@ const differentials = [
 
 export default function Differentials() {
   return (
-    <section id="diferenciais" className="py-24 bg-secondary">
+    <section id="diferenciais" className="py-24 bg-section-gold">
       <div className="container-site">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

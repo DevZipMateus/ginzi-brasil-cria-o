@@ -11,7 +11,7 @@ const markets = [
 
 export default function Market() {
   return (
-    <section id="mercado" className="py-24 bg-card">
+    <section id="mercado" className="py-24 bg-section-gold">
       <div className="container-site">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
