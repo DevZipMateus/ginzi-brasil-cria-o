@@ -30,11 +30,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-background/95 backdrop-blur-md shadow-soft py-3'
-          : 'bg-transparent py-5'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3 ${
+        isScrolled ? 'shadow-soft' : ''
       }`}
+      style={{ backgroundColor: '#fbdf1b' }}
     >
       <div className="container-site">
         <nav className="flex items-center justify-between">
