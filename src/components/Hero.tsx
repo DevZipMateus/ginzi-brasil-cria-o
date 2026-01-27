@@ -1,26 +1,45 @@
 import { ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 import heroBackground from '@/assets/hero-background.jpg';
 
 export default function Hero() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start start', 'end start'],
+  });
+
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
+  const textY = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
+  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+
   return (
     <section
+      ref={ref}
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background image with subtle zoom animation */}
+      {/* Background image with parallax */}
       <motion.div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-        initial={{ scale: 1.1 }}
-        animate={{ scale: 1 }}
+        style={{ 
+          backgroundImage: `url(${heroBackground})`,
+          y: backgroundY,
+          scale: 1.1,
+        }}
+        initial={{ scale: 1.2 }}
+        animate={{ scale: 1.1 }}
         transition={{ duration: 1.5, ease: 'easeOut' }}
       />
       
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
 
-      <div className="container-site relative z-10 pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6">
+      <motion.div 
+        className="container-site relative z-10 pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6"
+        style={{ y: textY, opacity }}
+      >
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <motion.div 
@@ -126,7 +145,7 @@ export default function Hero() {
             ))}
           </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
