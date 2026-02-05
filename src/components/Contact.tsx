@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, Instagram } from 'lucide-react';
+import { Phone, Mail, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
 import FadeInView from './animations/FadeInView';
 
@@ -12,20 +12,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'E-mail',
-    value: 'armando@apcomextrade.com',
-    href: 'mailto:armando@apcomextrade.com',
-  },
-  {
-    icon: MapPin,
-    label: 'Endereço',
-    value: 'Rua Milton Caldeira, 712 - Itapuã',
-    href: null,
-  },
-  {
-    icon: Clock,
-    label: 'Horário',
-    value: 'Segunda a Sexta: 8h às 18h',
-    href: null,
+    value: 'contato@ginzi.com.br',
+    href: 'mailto:contato@ginzi.com.br',
   },
 ];
 

@@ -37,7 +37,7 @@ const differentials = [
   {
     icon: ShieldCheck,
     title: 'Confiável',
-    subtitle: 'Qualidade em primeiro lugar',
+    subtitle: 'Qualidade e segurança alimentar em primeiro lugar',
     color: 'from-amber-500 to-orange-500',
   },
   {
