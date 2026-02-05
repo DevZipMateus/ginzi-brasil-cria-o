@@ -6,10 +6,8 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-section-gold-light"
     >
-      {/* Solid background color (exact #FFED80 via design token) */}
-      <div className="absolute inset-0 bg-section-gold-light" />
 
       {/* Ginger overlay with subtle zoom animation */}
       <motion.img
