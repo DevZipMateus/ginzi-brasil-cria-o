@@ -13,7 +13,7 @@ const values = [
   {
     icon: Globe2,
     title: 'Respeito à origem',
-    description: 'Honramos as técnicas ancestrais de Fujian e a sabedoria da natureza, mantendo a integridade medicinal da raiz.',
+    description: 'Honramos as técnicas ancestrais de Fujian e a riqueza da natureza, mantendo a integridade medicinal da raiz.',
   },
   {
     icon: Heart,
@@ -41,7 +41,7 @@ export default function About() {
           </h2>
           <div className="divider-gold mb-4 sm:mb-6" />
           <p className="text-foreground/80 text-base sm:text-lg px-2">
-            Uma ponte entre culturas que transforma a riqueza natural do gengibre em uma experiência sensorial de luxo.
+            Uma ponte entre culturas que transforma a riqueza natural do gengibre em uma experiência sensorial surpreendente
           </p>
         </FadeInView>
 
@@ -49,20 +49,11 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
           <FadeInView direction="left" delay={0.2} className="space-y-4 sm:space-y-6">
             <p className="text-base sm:text-lg text-foreground leading-relaxed">
-              Tudo começou em 2023, entre o burburinho e os sorrisos de um encontro entre amigos e clientes na feira Anufood, em São Paulo. Ali, nasceu um desejo inquieto no coração de um empresário capixaba: <strong>e se o gengibre pudesse ser elevado a um novo patamar de sofisticação e prazer?</strong>
+              Você sabia? Em chinês, a palavra <strong>Jinzi 金子</strong> significa <strong>ouro</strong>. Nós apenas trocamos o "J" pelo "G" para abraçar a nossa brasilidade, sem nunca esquecer a nossa origem.
             </p>
             <p className="text-base sm:text-lg text-foreground leading-relaxed">
-              Foram 12 meses de pesquisas e muito dedicação até chegarmos à essência da nossa marca. Fomos buscar inspiração na província chinesa de <strong>Fujian</strong>, berço de uma tradição milenar.
+              Assim como o ouro é um metal valioso, rico e atraente, o gengibre GINZI é o nosso tesouro. Uma raiz de riqueza nutricional inestimável, lapidada por um método de cristalização ancestral que transforma cada cubo em uma joia macia, dourada e cheia de vida.
             </p>
-            <motion.div 
-              className="p-4 sm:p-6 bg-primary/10 rounded-2xl border-l-4 border-primary"
-              whileHover={{ x: 5 }}
-              transition={{ type: 'spring', stiffness: 300 }}
-            >
-              <p className="text-foreground italic text-sm sm:text-base">
-                "Em chinês, a palavra <strong>Jinzi</strong> significa ouro. Nós apenas trocamos o 'J' pelo 'G' para abraçar a nossa brasilidade, sem nunca esquecer a nossa origem."
-              </p>
-            </motion.div>
           </FadeInView>
 
           <FadeInView direction="right" delay={0.3} className="relative">
@@ -103,7 +94,7 @@ export default function About() {
                 Nossa missão
               </h3>
               <p className="text-base sm:text-lg md:text-xl text-foreground/90 leading-relaxed">
-                Transformar a riqueza natural do gengibre em uma experiência sensorial de luxo e bem-estar, conectando culturas através de um produto premium que une prazer e saúde de forma prática e inovadora.
+                Transformar a riqueza natural do gengibre em uma experiência sensorial única, conectando culturas através de um produto premium que une prazer e saúde de forma prática e inovadora.
               </p>
             </div>
           </motion.div>

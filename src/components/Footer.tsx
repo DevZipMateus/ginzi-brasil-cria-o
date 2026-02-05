@@ -86,15 +86,13 @@ export default function Footer() {
               </li>
               <li>
                 <motion.a 
-                  href="mailto:armando@apcomextrade.com" 
+                  href="mailto:contato@ginzi.com.br" 
                   className="hover:text-primary transition-colors break-all"
                   whileHover={{ x: 3 }}
                 >
-                  armando@apcomextrade.com
+                  contato@ginzi.com.br
                 </motion.a>
               </li>
-              <li>Rua Milton Caldeira, 712</li>
-              <li>Itapuã</li>
             </ul>
             <motion.div 
               className="mt-4 sm:mt-6"

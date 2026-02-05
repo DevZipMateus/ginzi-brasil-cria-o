@@ -87,12 +87,14 @@ export default function Product() {
             {/* CTA */}
             <div className="pt-2 sm:pt-4">
               <motion.a
-                href="https://wa.me/5527999044433?text=Olá! Gostaria de saber mais sobre o gengibre cristalizado Ginzi."
+                href="https://www.mercadolivre.com.br/pagina/ginzibrasil#from=share_eshop"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-primary text-primary-foreground font-semibold rounded-full hover:bg-accent hover:text-accent-foreground transition-colors duration-300 text-sm sm:text-base w-full sm:w-auto justify-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Encomendar agora
+                Comprar agora
               </motion.a>
             </div>
           </FadeInView>
