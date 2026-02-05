@@ -1,40 +1,31 @@
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import heroBackground from '@/assets/hero-background.jpg';
 
 export default function Hero() {
   return (
     <section
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      style={{ backgroundColor: '#FFED80' }}
     >
-      {/* Background image with subtle zoom animation */}
-      <motion.div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-        initial={{ scale: 1.1 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 1.5, ease: 'easeOut' }}
-      />
-      
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
 
       <div className="container-site relative z-10 pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <motion.div 
-            className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-foreground/10 backdrop-blur-sm rounded-full mb-6 sm:mb-8"
+            className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full mb-6 sm:mb-8"
+            style={{ backgroundColor: 'rgba(24, 84, 48, 0.1)' }}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <motion.span 
-              className="w-2 h-2 bg-foreground rounded-full"
+              className="w-2 h-2 rounded-full"
+              style={{ backgroundColor: '#185430' }}
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             />
-            <span className="text-xs sm:text-sm font-medium text-foreground">
+            <span className="text-xs sm:text-sm font-medium" style={{ color: '#185430' }}>
               Gengibre cristalizado premium
             </span>
           </motion.div>
@@ -54,7 +45,8 @@ export default function Hero() {
 
           {/* H2 - Descrição */}
           <motion.h2 
-            className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mb-3 sm:mb-4 drop-shadow-md"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mb-3 sm:mb-4"
+            style={{ color: '#185430' }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -63,7 +55,8 @@ export default function Hero() {
           </motion.h2>
 
           <motion.p 
-            className="text-base sm:text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto mb-8 sm:mb-10 drop-shadow-sm px-2"
+            className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 sm:mb-10 px-2"
+            style={{ color: '#185430', opacity: 0.9 }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
@@ -80,7 +73,8 @@ export default function Hero() {
           >
             <motion.a
               href="https://wa.me/5527999044433"
-              className="btn-hero w-full sm:w-auto text-center"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 w-full sm:w-auto text-center"
+              style={{ backgroundColor: '#185430', color: '#FFED80' }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -89,8 +83,9 @@ export default function Hero() {
             </motion.a>
             <motion.a
               href="#sobre"
-              className="btn-hero-outline w-full sm:w-auto text-center"
-              whileHover={{ scale: 1.05 }}
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 w-full sm:w-auto text-center border-2"
+              style={{ backgroundColor: 'transparent', color: '#185430', borderColor: 'rgba(24, 84, 48, 0.3)' }}
+              whileHover={{ scale: 1.05, backgroundColor: '#185430', color: '#FFED80' }}
               whileTap={{ scale: 0.98 }}
             >
               Nossa história
@@ -99,7 +94,8 @@ export default function Hero() {
 
           {/* Stats */}
           <motion.div 
-            className="grid grid-cols-3 gap-4 sm:gap-8 mt-12 sm:mt-16 pt-8 sm:pt-16 border-t border-foreground/20"
+            className="grid grid-cols-3 gap-4 sm:gap-8 mt-12 sm:mt-16 pt-8 sm:pt-16 border-t"
+            style={{ borderColor: 'rgba(24, 84, 48, 0.2)' }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
@@ -116,10 +112,10 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.1 + index * 0.1 }}
               >
-                <p className="text-2xl sm:text-4xl md:text-5xl font-display font-bold text-foreground drop-shadow-md">
+                <p className="text-2xl sm:text-4xl md:text-5xl font-display font-bold" style={{ color: '#185430' }}>
                   {stat.value}
                 </p>
-                <p className="text-xs sm:text-sm md:text-base text-foreground/80 mt-1">
+                <p className="text-xs sm:text-sm md:text-base mt-1" style={{ color: '#185430', opacity: 0.8 }}>
                   {stat.label}
                 </p>
               </motion.div>
