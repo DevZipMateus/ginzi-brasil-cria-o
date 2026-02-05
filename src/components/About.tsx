@@ -1,6 +1,6 @@
 import { Sparkles, Heart, Globe2, Leaf } from 'lucide-react';
 import { motion } from 'framer-motion';
-import productTopImage from '@/assets/ginzi-product-top.jpg';
+import foundersTeamImage from '@/assets/founders-team.jpg';
 import FadeInView from './animations/FadeInView';
 import StaggerContainer, { StaggerItem, staggerItemVariants } from './animations/StaggerContainer';
 
@@ -58,13 +58,13 @@ export default function About() {
 
           <FadeInView direction="right" delay={0.3} className="relative">
             <motion.div 
-              className="aspect-square rounded-3xl overflow-hidden shadow-card"
+              className="aspect-[4/3] rounded-3xl overflow-hidden shadow-card"
               whileHover={{ scale: 1.02 }}
               transition={{ type: 'spring', stiffness: 200 }}
             >
               <img 
-                src={productTopImage} 
-                alt="Pote de gengibre cristalizado Ginzi com raízes de gengibre" 
+                src={foundersTeamImage} 
+                alt="Equipe fundadora da Ginzi em feira de negócios" 
                 className="w-full h-full object-cover"
               />
             </motion.div>
