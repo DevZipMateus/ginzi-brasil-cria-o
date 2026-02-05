@@ -65,7 +65,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
           >
-            Cubos dourados de pura sofisticação. Uma experiência sensorial de luxo e bem-estar que une prazer e saúde de forma prática e inovadora.
+            Cubos dourados de pura sofisticação. Uma experiência sensorial única que une prazer e saúde de forma prática e inovadora.
           </motion.p>
 
           {/* CTAs */}
