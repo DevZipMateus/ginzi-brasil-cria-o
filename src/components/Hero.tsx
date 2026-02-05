@@ -1,13 +1,21 @@
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import heroBackground from '@/assets/hero-background.jpg';
 
 export default function Hero() {
   return (
     <section
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{ backgroundColor: '#FFED80' }}
     >
+      {/* Background image with subtle zoom animation */}
+      <motion.div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+        initial={{ scale: 1.1 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1.5, ease: 'easeOut' }}
+      />
 
       <div className="container-site relative z-10 pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
