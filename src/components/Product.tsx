@@ -8,8 +8,10 @@ const benefits = [
   'Textura macia e sabor equilibrado',
   'Embalagem prática de 100g',
   'Método tradicional de Fujian',
-  'Sem conservantes artificiais',
-  'Produto 100% natural',
+  'Ação Termogênica Natural',
+  'Alívio para a Garganta e Hálito Fresco',
+  'Auxílio na Digestão',
+  'Segurança alimentar garantida',
 ];
 
 export default function Product() {
@@ -53,10 +55,10 @@ export default function Product() {
                 Nosso produto
               </p>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">
-                Gengibre cristalizado pote 100g
+                Gengibre Cristalizado GINZI – Pote 100g
               </h2>
               <p className="text-foreground/80 text-base sm:text-lg leading-relaxed">
-                Nós acreditamos que cuidar de si não precisa ser uma tarefa séria ou sem graça. Pode — e deve — ser um momento de puro deleite. Por isso, a GINZI não é apenas um snack; é uma experiência completa que cabe na palma da sua mão.
+                Acreditamos que o cuidado pessoal pode ser um momento de verdadeiro prazer. A GINZI resgata a tradição milenar de Fujian para transformar o hábito saudável em uma experiência sensorial única. Muito mais que um snack, é um aliado para o seu dia a dia que une sabor equilibrado e bem-estar em cada detalhe.
               </p>
             </div>
 
