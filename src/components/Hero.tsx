@@ -1,20 +1,17 @@
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import heroGingerOverlay from '@/assets/hero-ginger-overlay.png';
+import heroBackground from '@/assets/hero-background.jpg';
 
 export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-section-gold-light"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-
-      {/* Ginger overlay with subtle zoom animation */}
-      <motion.img
-        src={heroGingerOverlay}
-        alt=""
-        aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+      {/* Background image with subtle zoom animation */}
+      <motion.div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
         initial={{ scale: 1.05 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1.5, ease: 'easeOut' }}
