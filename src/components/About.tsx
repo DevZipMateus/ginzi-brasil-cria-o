@@ -46,8 +46,27 @@ export default function About() {
         </FadeInView>
 
         {/* Story content */}
+        <FadeInView delay={0.2} className="max-w-4xl mx-auto mb-12 sm:mb-16">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-display font-bold mb-4 sm:mb-6 text-center">
+            GINZI: O Brilho do Ouro, a Força da Raiz
+          </h3>
+          <p className="text-base sm:text-lg text-foreground leading-relaxed mb-4">
+            Tudo começou em 2023, entre o burburinho e os sorrisos de um encontro entre amigos e clientes na feira Anufood, em São Paulo. Ali, nasceu um desejo inquieto no coração de um empresário capixaba: e se o gengibre, essa raiz tão poderosa, pudesse ser elevado a um novo patamar de sofisticação e prazer?
+          </p>
+          <p className="text-base sm:text-lg text-foreground leading-relaxed mb-8">
+            O desafio estava lançado: unir o <strong>sabor irresistível</strong> ao <strong>bem-estar absoluto</strong>.
+          </p>
+          
+          <h4 className="text-lg sm:text-xl md:text-2xl font-display font-semibold mb-4 text-center">
+            De Jinzi para GINZI: Uma Ponte entre Culturas
+          </h4>
+          <p className="text-base sm:text-lg text-foreground leading-relaxed">
+            Foram meses de pesquisas e mergulhos profundos, fundamentados em quase <strong>duas décadas de expertise no mercado internacional de gengibre</strong>. Com o olhar técnico de quem domina a exportação global, o empresário capixaba voltou seus olhos para a província de Fujian, na China. Inspirado por essa tradição milenar, ele estabeleceu uma ponte entre culturas, selecionando criteriosamente o que há de melhor no berço da raiz para dar vida à essência da GINZI.
+          </p>
+        </FadeInView>
+
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
-          <FadeInView direction="left" delay={0.2} className="space-y-4 sm:space-y-6">
+          <FadeInView direction="left" delay={0.3} className="space-y-4 sm:space-y-6">
             <p className="text-base sm:text-lg text-foreground leading-relaxed">
               Você sabia? Em chinês, a palavra <strong>Jinzi 金子</strong> significa <strong>ouro</strong>. Nós apenas trocamos o "J" pelo "G" para abraçar a nossa brasilidade, sem nunca esquecer a nossa origem.
             </p>
