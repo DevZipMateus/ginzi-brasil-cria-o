@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import heroBackground from '@/assets/hero-background.jpg';
+import heroGingerOverlay from '@/assets/hero-ginger-overlay.png';
 
 export default function Hero() {
   return (
@@ -8,17 +8,19 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background image with subtle zoom animation */}
-      <motion.div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-        initial={{ scale: 1.1 }}
+      {/* Solid background color (exact #FFED80 via design token) */}
+      <div className="absolute inset-0 bg-section-gold-light" />
+
+      {/* Ginger overlay with subtle zoom animation */}
+      <motion.img
+        src={heroGingerOverlay}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+        initial={{ scale: 1.05 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1.5, ease: 'easeOut' }}
       />
-      
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
 
       <div className="container-site relative z-10 pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
