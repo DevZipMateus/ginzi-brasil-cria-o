@@ -1,6 +1,7 @@
 import { Sparkles, Heart, Globe2, Leaf } from 'lucide-react';
 import { motion } from 'framer-motion';
 import foundersTeamImage from '@/assets/founders-team.jpg';
+import founderFieldImage from '@/assets/founder-ginger-field.jpg';
 import FadeInView from './animations/FadeInView';
 import StaggerContainer, { StaggerItem, staggerItemVariants } from './animations/StaggerContainer';
 
@@ -60,9 +61,22 @@ export default function About() {
           <h4 className="text-lg sm:text-xl md:text-2xl font-display font-semibold mb-4 text-center">
             De Jinzi para GINZI: Uma Ponte entre Culturas
           </h4>
-          <p className="text-base sm:text-lg text-foreground leading-relaxed">
-            Foram meses de pesquisas e mergulhos profundos, fundamentados em quase <strong>duas décadas de expertise no mercado internacional de gengibre</strong>. Com o olhar técnico de quem domina a exportação global, o empresário capixaba voltou seus olhos para a província de Fujian, na China. Inspirado por essa tradição milenar, ele estabeleceu uma ponte entre culturas, selecionando criteriosamente o que há de melhor no berço da raiz para dar vida à essência da GINZI.
-          </p>
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
+            <p className="text-base sm:text-lg text-foreground leading-relaxed">
+              Foram meses de pesquisas e mergulhos profundos, fundamentados em quase <strong>duas décadas de expertise no mercado internacional de gengibre</strong>. Com o olhar técnico de quem domina a exportação global, o empresário capixaba voltou seus olhos para a província de Fujian, na China. Inspirado por essa tradição milenar, ele estabeleceu uma ponte entre culturas, selecionando criteriosamente o que há de melhor no berço da raiz para dar vida à essência da GINZI.
+            </p>
+            <motion.div 
+              className="aspect-[3/4] rounded-2xl overflow-hidden shadow-card"
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: 'spring', stiffness: 200 }}
+            >
+              <img 
+                src={founderFieldImage} 
+                alt="Empresário fundador da Ginzi em plantação de gengibre" 
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+          </div>
         </FadeInView>
 
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">

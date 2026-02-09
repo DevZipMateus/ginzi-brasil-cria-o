@@ -7,10 +7,10 @@ const benefits = [
   'Gengibre cristalizado artesanal',
   'Textura macia e sabor equilibrado',
   'Embalagem prática de 100g',
-  'Método tradicional de Fujian',
-  'Ação Termogênica Natural',
-  'Alívio para a Garganta e Hálito Fresco',
-  'Auxílio na Digestão',
+  'Tradição de Origem: Método de Fujian',
+  'Alívio para a garganta e hálito fresco',
+  'Auxílio natural na digestão',
+  'Ação termogênica natural',
   'Segurança alimentar garantida',
 ];
 

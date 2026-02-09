@@ -103,7 +103,7 @@ export default function Hero() {
           >
             {[
               { value: '7', label: 'Diferenciais de ouro' },
-              { value: '100%', label: 'Natural' },
+              { value: '100%', label: 'Tradição de Origem' },
               { value: '✦', label: 'Premium' },
             ].map((stat, index) => (
               <motion.div 
