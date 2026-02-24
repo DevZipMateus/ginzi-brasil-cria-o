@@ -109,14 +109,16 @@ export default function Hero() {
             ].map((stat, index) => (
               <motion.div 
                 key={stat.label}
-                className="text-center"
+                className="text-center flex flex-col items-center justify-end"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.1 + index * 0.1 }}
               >
-                <p className="text-2xl sm:text-4xl md:text-5xl font-display font-bold text-hero-text drop-shadow-md">
-                  {stat.value}
-                </p>
+                <div className="h-10 sm:h-14 md:h-16 flex items-center justify-center">
+                  <p className="text-2xl sm:text-4xl md:text-5xl font-display font-bold text-hero-text drop-shadow-md leading-none">
+                    {stat.value}
+                  </p>
+                </div>
                 <p className="text-xs sm:text-sm md:text-base text-hero-text/80 mt-1">
                   {stat.label}
                 </p>
