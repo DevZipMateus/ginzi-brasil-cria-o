@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import heroBackground from '@/assets/hero-background.jpg';
+import gingerIcon from '@/assets/ginger-icon.png';
 
 export default function Hero() {
   return (
@@ -103,7 +104,7 @@ export default function Hero() {
           >
             {[
               { value: '7', label: 'Diferenciais de ouro' },
-              { value: '100%', label: 'Tradição de Origem' },
+              { value: <img src={gingerIcon} alt="Gengibre" className="h-10 sm:h-14 md:h-16 inline-block" />, label: 'Tradição de Origem' },
               { value: '✦', label: 'Premium' },
             ].map((stat, index) => (
               <motion.div 
