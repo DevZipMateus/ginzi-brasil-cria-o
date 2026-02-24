@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, BookOpen } from 'lucide-react';
 import logo from '@/assets/logo.png';
 
 const navLinks = [
@@ -9,6 +9,7 @@ const navLinks = [
   { href: '#produto', label: 'Produto' },
   { href: '#mercado', label: 'Mercado' },
   { href: '#contato', label: 'Contato' },
+  { href: 'https://ginzi-blog.blogspot.com/', label: 'Blog', external: true },
 ];
 
 export default function Header() {
@@ -53,10 +54,12 @@ export default function Header() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className={`text-sm font-medium transition-colors duration-200 hover:text-primary ${
+                  {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                  className={`text-sm font-medium transition-colors duration-200 hover:text-primary flex items-center gap-1 ${
                     isScrolled ? 'text-foreground' : 'text-foreground'
                   }`}
                 >
+                  {link.external && <BookOpen size={14} />}
                   {link.label}
                 </a>
               </li>
@@ -94,8 +97,10 @@ export default function Header() {
                   <a
                     href={link.href}
                     onClick={handleLinkClick}
-                    className="block text-foreground font-medium hover:text-primary transition-colors"
+                    {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                    className="flex items-center gap-2 text-foreground font-medium hover:text-primary transition-colors"
                   >
+                    {link.external && <BookOpen size={16} />}
                     {link.label}
                   </a>
                 </li>

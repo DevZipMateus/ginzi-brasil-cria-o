@@ -1,4 +1,4 @@
-import { Instagram } from 'lucide-react';
+import { Instagram, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 import logo from '@/assets/logo.png';
 
@@ -94,20 +94,30 @@ export default function Footer() {
                 </motion.a>
               </li>
             </ul>
-            <motion.div 
-              className="mt-4 sm:mt-6"
-              whileHover={{ scale: 1.05 }}
-            >
-              <a
-                href="https://instagram.com/ginzibrasil"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-background/70 hover:text-primary transition-colors"
-              >
-                <Instagram size={18} className="sm:w-5 sm:h-5" />
-                <span className="text-sm sm:text-base">@ginzibrasil</span>
-              </a>
-            </motion.div>
+            <div className="flex flex-col gap-3 mt-4 sm:mt-6">
+              <motion.div whileHover={{ scale: 1.05 }}>
+                <a
+                  href="https://instagram.com/ginzibrasil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-background/70 hover:text-primary transition-colors"
+                >
+                  <Instagram size={18} className="sm:w-5 sm:h-5" />
+                  <span className="text-sm sm:text-base">@ginzibrasil</span>
+                </a>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }}>
+                <a
+                  href="https://ginzi-blog.blogspot.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-background/70 hover:text-primary transition-colors"
+                >
+                  <BookOpen size={18} className="sm:w-5 sm:h-5" />
+                  <span className="text-sm sm:text-base">Blog Ginzi</span>
+                </a>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
 
